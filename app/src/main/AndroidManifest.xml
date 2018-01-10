@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rixwansharif.travelanch_company" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/imageedit_2_5239853378"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainPageActivity"
+            android:label="@string/title_activity_main_page" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainPageActivity" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Drawer_Theme" >
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:parentActivityName=".MainPageActivity" >
+        </activity>
+        <activity
+            android:name=".UploadPhotoActivity"
+            android:label="@string/title_activity_upload_photo" >
+        </activity>
+        <activity
+            android:name=".BachatBidActivity"
+            android:label="@string/title_activity_bachat_bid"
+            android:parentActivityName=".ClientTripsActivity" >
+        </activity>
+        <activity
+            android:name=".LambSambActivity"
+            android:label="@string/title_activity_lamb_samb"
+            android:parentActivityName=".ClientTripsActivity" >
+        </activity>
+        <activity
+            android:name=".ClientTripsActivity"
+            android:label="@string/title_activity_client_trips"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".MyBidsActivity"
+            android:label="@string/title_activity_my_bids"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".MyAcceptedBidsActivity"
+            android:label="@string/title_activity_my_accepted_bids"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="com.example.rixwansharif.travelanch_company.Notification_TARGET" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

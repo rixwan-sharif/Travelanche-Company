@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rixwansharif.travelanch_company.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ad7ab5"
+        android:fillViewport="false"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:paddingBottom="@dimen/p20">
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_login_carlogo_width"
+                android:layout_height="@dimen/activity_login_carlogo_height"
+                android:layout_marginTop="@dimen/activity_main_plan_my_trips_height"
+
+                android:background="@drawable/car_logo"
+                android:id="@+id/linearLayout"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m50"
+
+                android:paddingLeft="@dimen/p10"
+
+
+                android:ems="10"
+                android:id="@+id/login_phone_number_text"
+                android:inputType="phone"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Phone"
+                android:textColorHint="#a6083d29"
+                android:textColor="#a6083d29"
+                android:paddingRight="@dimen/p10"
+                android:singleLine="true"
+                android:drawablePadding="@dimen/p15"
+                android:drawableLeft="@drawable/ic_phone_purple"
+                android:layout_marginTop="@dimen/m253"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginRight="@dimen/m20"
+                android:textSize="@dimen/s16"
+                android:maxLength="14"
+                android:text="+92 3XXXXXXXXX" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m50"
+                android:paddingLeft="@dimen/p10"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/new_cnfrm_pass_text"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/login_phone_number_text"
+                android:layout_marginTop="@dimen/m315"
+                android:background="@drawable/edit_text_shape"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginRight="@dimen/m20"
+                android:hint="Password"
+                android:textColorHint="#a6083d29"
+                android:textColor="#a6083d29"
+                android:paddingRight="@dimen/p10"
+                android:singleLine="true"
+                android:drawablePadding="@dimen/p8"
+                android:drawableLeft="@drawable/ic_lock_purple"
+                android:textSize="@dimen/s16"
+                android:maxLength="15" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:id="@+id/forgot_pass_textview"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/s15"
+                android:layout_below="@+id/new_cnfrm_pass_text"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/m378"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:id="@+id/set_new_pass_btn"
+                android:layout_below="@+id/forgot_pass_textview"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btn_shape"
+                android:textColor="#ad7ab5"
+                android:textSize="@dimen/s17"
+                android:layout_marginTop="@dimen/m430"
+                android:layout_alignRight="@+id/new_cnfrm_pass_text"
+                android:layout_alignEnd="@+id/new_cnfrm_pass_text"
+                android:layout_alignLeft="@+id/new_cnfrm_pass_text"
+                android:layout_alignStart="@+id/new_cnfrm_pass_text"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

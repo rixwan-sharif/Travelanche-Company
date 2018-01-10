@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ad7ab5"
+    android:orientation="vertical"
+
+    tools:context="com.example.salman_pc.trip.trip">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ad7ab5">
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_login_carlogo_width"
+                android:layout_height="@dimen/activity_login_carlogo_height"
+                android:layout_marginTop="@dimen/m50"
+                android:background="@drawable/car_logo"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_contact_person"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m40"
+                android:layout_below="@+id/text_contact_person"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Contact Person"
+                android:textColorHint="#412e7c"></EditText>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_contact_number"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_below="@+id/text_contact_number"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Phone (923XXXXXXXXXX)"
+                android:textColorHint="#412e7c"
+                android:phoneNumber="true"
+                android:maxLength="12"></EditText>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_name"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_below="@+id/text_company_name"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Company Name"
+                android:textColorHint="#412e7c"></EditText>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_reg_no"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_below="@+id/text_company_name"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Company Registration No"
+                android:textColorHint="#412e7c"></EditText>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_city"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_below="@+id/company_reg_no"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="City"
+                android:textColorHint="#412e7c"></EditText>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_address"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_below="@+id/company_city"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Address"
+                android:textColorHint="#412e7c"></EditText>
+
+            <EditText android:layout_width="match_parent"
+            android:layout_height="@dimen/m40"
+            android:id="@+id/company_password"
+            android:paddingLeft="@dimen/p10"
+            android:layout_marginTop="@dimen/m8"
+            android:layout_below="@+id/company_address"
+            android:layout_marginLeft="@dimen/m10"
+            android:layout_marginRight="@dimen/m10"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Password"
+            android:textColorHint="#412e7c"
+            android:inputType="textPassword"></EditText>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/company_c_password"
+                android:paddingLeft="@dimen/p10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_below="@+id/company_address"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:hint="Confrim Password"
+                android:textColorHint="#412e7c"
+                android:inputType="textPassword"></EditText>
+
+
+
+
+            <Button android:layout_width="match_parent"
+                android:layout_height="@dimen/m40"
+                android:id="@+id/register_btn"
+                android:layout_marginTop="@dimen/m20"
+                android:layout_below="@+id/company_password"
+                android:dropDownWidth="fill_parent"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:background="@drawable/edit_text_shape"
+                android:text="Register"
+                android:textColor="#412e7c"
+                android:textSize="@dimen/s20"
+                android:textStyle="bold"></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_adff93ed286c7a161bfb35919834b4649154a7e6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.1.0_03841be7c4261eeeb933c190b7f0e44603c60520.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.8.0_8da0902321b1906ecbb595bb47ba81e5dd06b7c6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="122de0d704f76d2bb5cb9db66e00fe90a0a41e78">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-11.8.0_b95e7afa010d6c7e9bbb462d7de4d7df1d814dd2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.0_1e27a027396181e953a0cb26dc17f970d8a8e5da.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_4569c8eaeda6d150220c6656e08f182453922460.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.mcxiaoke.volley-library-aar-1.0.0_9ab9d6f183a42bdb4a6aad4cc7627ce588888f01.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e6aeff19a2ce1eb896557be73cb9ceb56f8d1cf3">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-11.8.0_b395155ec9e759431c78e8bc8ee9c1a503e077d9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="42c9659c973e311ffdb645ed057e5053e0ab5c78">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-11.8.0_4f0d2f2472c0e51e1f1ba0bf261530537a94ad7f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\25.2.0\4a5a82a027706397fff621b22fd6fa796e91d7c5\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_5e65e62dd79e75264c76670262312c84e446a294.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.0_ae3be35746b03f9a71c50c788ae1bced0d3659dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.8.0_fbdee1f2f51185ef62a7a4885513310c5ff1e14b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_a460bd7fea29ffe3826300f50cb4cdeda406b52b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_2af3123f974c6527e69af0c4d1da9709ac083e40.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\libs\CircleImageView-master\gradle\wrapper\gradle-wrapper.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\gradle-wrapper_88423b6e0a411bbc0a357d460184bbfbe3c00827.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c44026185adf61f12630db36ac6781481f559e7c">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-11.8.0_a8a1309cc05add6f79b0ac788c468b765a82e534.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_fd951ffae587e98dbdd419a1ab81ef7ec5ea5f40.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="233d88c6f961d2a84758dfe27b7af61318190c7b">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-11.8.0_c4fe437212095a2f579a223e8d8839cd4eb8cc7a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_7c63329b40518048fa97402708efd59e8eff989f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="264ad23f9752aabecfa41115c52a25a023a08839">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-11.8.0_6ce5601769f4ca78ced96a52f6f9b9da6fd4be17.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_95d11541b1013e3d476b8f2fb4a8f0f18bdb33ec.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="601ebd8fa027a3dad924ffa1cb14689ced5aa436">
+        <dex dex="C:\Users\Rixwan Sharif\AndroidStudioProjects\Travelanche-Company\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-11.8.0_f75e64f3ea60f5924c1d91a5e5369f11d744a1c8.jar" />
+    </item>
+
+</items>

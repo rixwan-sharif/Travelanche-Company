@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/dialogue_shape"
+    android:id="@+id/register_dialogue">
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="Select Bidding Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s20" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bachat_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m24"
+        android:layout_marginTop="@dimen/m24"
+        android:textAllCaps="false"
+        android:padding="@dimen/p12"
+        android:text="Bachat Package"
+        android:background="@drawable/btn_shape"
+        android:textColor="#ad7ab5"
+        android:textSize="@dimen/s14">
+
+    </android.support.v7.widget.AppCompatButton>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/lamb_samb_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m24"
+        android:layout_marginTop="@dimen/m5"
+        android:textAllCaps="false"
+        android:padding="@dimen/p12"
+        android:text="Lamb Samb Package"
+        android:background="@drawable/btn_shape"
+        android:textColor="#ad7ab5"
+        android:textSize="@dimen/s14">
+
+    </android.support.v7.widget.AppCompatButton>
+
+
+</LinearLayout>

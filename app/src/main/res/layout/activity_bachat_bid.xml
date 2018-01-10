@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ad7ab5">
+    <LinearLayout
+        android:layout_width="@dimen/activity_login_carlogo_width"
+        android:layout_height="@dimen/activity_login_carlogo_height"
+        android:layout_marginTop="@dimen/m50"
+        android:background="@drawable/car_logo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginRight="@dimen/m10"
+        android:layout_marginTop="@dimen/m80"
+        android:textColorHint="#412e7c"
+        android:hint="Select Vehicle"
+        android:textSize="@dimen/s15"
+        android:paddingLeft="@dimen/p10"
+        android:id="@+id/bachat_vehicle_text"
+        android:paddingRight="@dimen/p5"
+        android:singleLine="true"
+        android:gravity="left|center"
+        android:textColor="#412e7c" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginRight="@dimen/m10"
+        android:layout_marginTop="@dimen/m15"
+        android:textColorHint="#412e7c"
+        android:hint="Select Driver"
+        android:textSize="@dimen/s15"
+        android:paddingLeft="@dimen/p10"
+        android:id="@+id/bachat_driver_text"
+        android:paddingRight="@dimen/p5"
+        android:singleLine="true"
+        android:gravity="left|center"
+        android:textColor="#412e7c" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginRight="@dimen/m10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginTop="@dimen/m15"
+        android:textColorHint="#412e7c"
+        android:hint="Rate/Day (Rs.)"
+        android:textSize="15dp"
+        android:paddingLeft="@dimen/p10"
+        android:inputType="number"
+        android:id="@+id/bachat_rate_per_day_text"
+        android:paddingRight="@dimen/p5"
+        android:singleLine="true"
+        android:gravity="left|center"
+        android:textColor="#412e7c" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid by Lamb Samb"
+        android:id="@+id/bachat_checkBox"
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginTop="@dimen/m5"
+        android:checked="false"
+        android:buttonTint="#ffffff"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginRight="@dimen/m10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@drawable/edit_text_shape"
+
+
+        android:layout_marginTop="@dimen/m5"
+        android:textColorHint="#412e7c"
+        android:hint="Total Fares (Rs.)"
+        android:textSize="@dimen/s15"
+        android:paddingLeft="@dimen/p10"
+        android:inputType="number"
+        android:id="@+id/bachat_total_fare_txt"
+        android:visibility="gone"
+        android:paddingRight="@dimen/p5"
+        android:singleLine="true" />
+    <Button
+        android:layout_marginTop="@dimen/m10"
+        android:layout_width="@dimen/activity_forgot_password_forgot_set_new_pass_btn_width"
+        android:layout_height="@dimen/m50"
+        android:background="@drawable/btn_shape"
+        android:layout_gravity="center"
+        android:textColor="#ad7ab5"
+        android:text="Bid"
+        android:textSize="@dimen/s20"
+        android:id="@+id/bachat_bid_btn" />
+
+</LinearLayout>
