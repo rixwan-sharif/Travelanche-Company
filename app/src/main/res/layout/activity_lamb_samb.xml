@@ -13,13 +13,12 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal" />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="@dimen/m50"
         android:background="@drawable/edit_text_shape"
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
-
         android:layout_marginTop="@dimen/m100"
         android:hint="Vehicle"
         android:textColorHint="#412e7c"
@@ -29,14 +28,29 @@
         android:paddingRight="@dimen/p5"
         android:singleLine="true" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginRight="@dimen/m10"
+        android:layout_marginTop="@dimen/m15"
+        android:textColorHint="#412e7c"
+        android:hint="Select Driver"
+        android:textSize="@dimen/s15"
+        android:paddingLeft="@dimen/p10"
+        android:id="@+id/lambsamb_driver_text"
+        android:paddingRight="@dimen/p5"
+        android:singleLine="true"
+        android:gravity="left|center"
+        android:textColor="#412e7c" />
+
     <EditText
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
         android:layout_width="match_parent"
         android:layout_height="@dimen/m50"
         android:background="@drawable/edit_text_shape"
-
-
         android:layout_marginTop="@dimen/m15"
         android:hint="Total Fare (Rs.)"
         android:textColorHint="#412e7c"
