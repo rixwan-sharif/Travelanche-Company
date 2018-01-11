@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc848f3-4f42-4fb9-bedd-18717787ca3c" name="Default" comment="" />
+    <list default="true" id="4636a267-9953-4c13-a64f-a48547a68729" name="Default" comment="" />
     <ignored path="Travelanche-Company.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,85 +32,7 @@
     <favorites_list name="Travelanche-Company" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4811321">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_bachat_bid.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bachat_bid.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0689654">
-              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="47" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_lamb_samb.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lamb_samb.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7586207">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="e#309#346#0" expanded="true" />
-                <element signature="e#377#415#0" expanded="true" />
-                <element signature="e#449#461#0" expanded="true" />
-                <element signature="e#733#745#0" expanded="true" />
-                <element signature="e#835#847#0" expanded="true" />
-                <element signature="e#883#895#0" expanded="true" />
-                <element signature="e#929#942#0" expanded="true" />
-                <element signature="e#1039#1051#0" expanded="true" />
-                <element signature="e#1080#1092#0" expanded="true" />
-                <element signature="e#1170#1181#0" expanded="true" />
-                <element signature="e#1308#1320#0" expanded="true" />
-                <element signature="e#1410#1422#0" expanded="true" />
-                <element signature="e#1458#1470#0" expanded="true" />
-                <element signature="e#1504#1516#0" expanded="true" />
-                <element signature="e#1619#1631#0" expanded="true" />
-                <element signature="e#1660#1672#0" expanded="true" />
-                <element signature="e#1749#1760#0" expanded="true" />
-                <element signature="e#1921#1933#0" expanded="true" />
-                <element signature="e#1969#1981#0" expanded="true" />
-                <element signature="e#2056#2068#0" expanded="true" />
-                <element signature="e#2157#2169#0" expanded="true" />
-                <element signature="e#2275#2287#0" expanded="true" />
-                <element signature="e#2316#2328#0" expanded="true" />
-                <element signature="e#2438#2449#0" expanded="true" />
-                <element signature="e#2706#2718#0" expanded="true" />
-                <element signature="e#2752#2763#0" expanded="true" />
-                <element signature="e#2921#2933#0" expanded="true" />
-                <element signature="e#2969#2981#0" expanded="true" />
-                <element signature="e#3056#3068#0" expanded="true" />
-                <element signature="e#3159#3170#0" expanded="true" />
-                <element signature="e#3277#3289#0" expanded="true" />
-                <element signature="e#3318#3330#0" expanded="true" />
-                <element signature="e#3473#3484#0" expanded="true" />
-                <element signature="e#3567#3579#0" expanded="true" />
-                <element signature="e#3609#3672#0" expanded="true" />
-                <element signature="e#3703#3715#0" expanded="true" />
-                <element signature="e#3893#3905#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1963,7 +1885,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lamb_samb.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -1999,9 +1921,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2022,24 +1945,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travelanche-Company" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2086,7 +1991,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2231,33 +2135,33 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dbc848f3-4f42-4fb9-bedd-18717787ca3c" name="Default" comment="" />
-      <created>1515668042748</created>
+      <changelist id="4636a267-9953-4c13-a64f-a48547a68729" name="Default" comment="" />
+      <created>1515668749694</created>
       <option name="number" value="Default" />
-      <updated>1515668042748</updated>
+      <updated>1515668749694</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32526475" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -2281,73 +2185,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bachat_bid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0689654">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="47" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lamb_samb.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7586207">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#309#346#0" expanded="true" />
-            <element signature="e#377#415#0" expanded="true" />
-            <element signature="e#449#461#0" expanded="true" />
-            <element signature="e#733#745#0" expanded="true" />
-            <element signature="e#835#847#0" expanded="true" />
-            <element signature="e#883#895#0" expanded="true" />
-            <element signature="e#929#942#0" expanded="true" />
-            <element signature="e#1039#1051#0" expanded="true" />
-            <element signature="e#1080#1092#0" expanded="true" />
-            <element signature="e#1170#1181#0" expanded="true" />
-            <element signature="e#1308#1320#0" expanded="true" />
-            <element signature="e#1410#1422#0" expanded="true" />
-            <element signature="e#1458#1470#0" expanded="true" />
-            <element signature="e#1504#1516#0" expanded="true" />
-            <element signature="e#1619#1631#0" expanded="true" />
-            <element signature="e#1660#1672#0" expanded="true" />
-            <element signature="e#1749#1760#0" expanded="true" />
-            <element signature="e#1921#1933#0" expanded="true" />
-            <element signature="e#1969#1981#0" expanded="true" />
-            <element signature="e#2056#2068#0" expanded="true" />
-            <element signature="e#2157#2169#0" expanded="true" />
-            <element signature="e#2275#2287#0" expanded="true" />
-            <element signature="e#2316#2328#0" expanded="true" />
-            <element signature="e#2438#2449#0" expanded="true" />
-            <element signature="e#2706#2718#0" expanded="true" />
-            <element signature="e#2752#2763#0" expanded="true" />
-            <element signature="e#2921#2933#0" expanded="true" />
-            <element signature="e#2969#2981#0" expanded="true" />
-            <element signature="e#3056#3068#0" expanded="true" />
-            <element signature="e#3159#3170#0" expanded="true" />
-            <element signature="e#3277#3289#0" expanded="true" />
-            <element signature="e#3318#3330#0" expanded="true" />
-            <element signature="e#3473#3484#0" expanded="true" />
-            <element signature="e#3567#3579#0" expanded="true" />
-            <element signature="e#3609#3672#0" expanded="true" />
-            <element signature="e#3703#3715#0" expanded="true" />
-            <element signature="e#3893#3905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4811321">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
         </state>
       </provider>
