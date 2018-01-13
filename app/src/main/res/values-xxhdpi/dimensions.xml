@@ -245,6 +245,7 @@
     <dimen name="m110">165dp</dimen>
     <dimen name="m90">135dp</dimen>
     <dimen name="m210">315dp</dimen>
+    <dimen name="h65">97.5dp</dimen>
 
 
 </resources>

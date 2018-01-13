@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,7 +18,11 @@ import android.util.Config;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+<<<<<<< HEAD
 import android.widget.RelativeLayout;
+=======
+import android.widget.ImageView;
+>>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -83,6 +88,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Load trips of the clients of Rental's city
         Set_profile();
 
+<<<<<<< HEAD
+=======
+        profile_imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                ImageView img_full = (ImageView) findViewById(R.id.profile_image);
+                Intent i=new Intent(MainActivity.this,preview_fullimage.class);
+                ActivityOptionsCompat options=ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, img_full, "profileimage");
+                startActivity(i, options.toBundle());
+            }
+        });
+
+
+>>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
         //
         client_trips.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +140,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
            return true;
        }
    */
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

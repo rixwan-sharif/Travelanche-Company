@@ -2,17 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#ad7ab5">
+    android:background="#c9a8ce">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#ad7ab5"
+        android:visibility="visible"
         android:id="@+id/accepted_relative_layout">
 
+<<<<<<< HEAD
         <Button
             android:layout_width="180dp"
             android:layout_height="50dp"
@@ -247,6 +249,8 @@
             android:layout_alignTop="@+id/tt_dd_pick_time_textview"
             android:layout_toRightOf="@+id/textView11"
             android:layout_toEndOf="@+id/textView11" />
+=======
+>>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
 
         <TextView
             android:layout_width="wrap_content"
@@ -266,6 +270,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+<<<<<<< HEAD
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/accepted_relative_layout"
@@ -310,82 +315,17 @@
             android:layout_alignStart="@+id/textView"
             android:layout_marginTop="5dp"
             android:textColor="#ffffff" />
+=======
+>>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="1000000"
-            android:id="@+id/accepted_bid_rate_text"
-            android:layout_below="@+id/accepted_bid_vehicle_detail_text"
-            android:layout_alignLeft="@+id/accepted_bid_vehicle_detail_text"
-            android:layout_alignStart="@+id/accepted_bid_vehicle_detail_text"
-            android:layout_marginTop="5dp"
-            android:textColor="#ffffff" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Lamb Slamb"
-            android:id="@+id/textView5"
-            android:layout_alignTop="@+id/textView"
-            android:layout_toRightOf="@+id/textView4"
-            android:layout_toEndOf="@+id/textView4"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:textColor="#ffffff"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="GLI 2009"
-            android:id="@+id/accepted_bid_vehiclee_detail_text"
-            android:layout_below="@+id/textView5"
-            android:layout_alignLeft="@+id/textView5"
-            android:layout_alignStart="@+id/textView5"
-            android:layout_marginTop="5dp"
-            android:textColor="#ffffff" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="100000"
-            android:id="@+id/accepted_bid_total_fare_txt"
-            android:layout_below="@+id/accepted_bid_vehiclee_detail_text"
-            android:layout_alignLeft="@+id/accepted_bid_vehiclee_detail_text"
-            android:layout_alignStart="@+id/accepted_bid_vehiclee_detail_text"
-            android:layout_marginTop="5dp"
-            android:textColor="#ffffff" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="total"
-            android:id="@+id/textView8"
-            android:layout_below="@+id/accepted_bid_total_fare_txt"
-            android:layout_toRightOf="@+id/accepted_bid_total_fare_txt"
-            android:layout_toEndOf="@+id/my_bid_total_fare_txt"
-            android:layout_marginTop="-8dp"
-            android:layout_marginLeft="1dp"
-            android:textColor="#ffffff" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="per/day"
-            android:id="@+id/textView4"
-            android:layout_below="@+id/accepted_bid_rate_text"
-            android:layout_toRightOf="@+id/accepted_bid_rate_text"
-            android:layout_toEndOf="@+id/accepted_bid_rate_text"
-            android:layout_marginTop="-8dp"
-            android:textColor="#ffffff" />
-
-    </RelativeLayout>
+        android:layout_width="370dp"
+        android:layout_height="260dp"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/accepted_relative_layout"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/back_of"
+        android:layout_marginRight="10dp"></RelativeLayout>
 
 </RelativeLayout>
