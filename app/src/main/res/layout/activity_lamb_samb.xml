@@ -19,14 +19,16 @@
         android:background="@drawable/edit_text_shape"
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
-        android:layout_marginTop="@dimen/m100"
+        android:layout_marginTop="@dimen/m80"
         android:hint="Vehicle"
         android:textColorHint="#412e7c"
         android:textSize="@dimen/s15"
         android:paddingLeft="@dimen/p10"
         android:id="@+id/lambsamb_vehicle_text"
         android:paddingRight="@dimen/p5"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textColor="#412e7c"
+        android:gravity="left|center" />
 
     <TextView
         android:layout_width="match_parent"
@@ -59,7 +61,9 @@
         android:inputType="number"
         android:id="@+id/lambsamb_fare_text"
         android:paddingRight="@dimen/p5"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textColor="#412e7c"
+        android:gravity="left|center" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -93,7 +97,7 @@
     <Button
         android:layout_marginTop="@dimen/m15"
         android:layout_width="@dimen/activity_forgot_password_forgot_set_new_pass_btn_width"
-        android:layout_height="@dimen/m55"
+        android:layout_height="@dimen/m50"
         android:background="@drawable/btn_shape"
         android:layout_gravity="center"
         android:textColor="#ad7ab5"

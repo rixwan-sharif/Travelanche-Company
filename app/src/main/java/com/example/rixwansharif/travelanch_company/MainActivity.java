@@ -17,7 +17,9 @@ import android.util.Config;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
@@ -30,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle mytoggle;
     private Toolbar mtoolbar;
     private NavigationView navigationView;
-
 
     private Button client_trips,my_bids,my_accepted_bids;
     private CircleImageView profile_imageView;
@@ -61,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         phone_number=(TextView) findViewById(R.id.profile_user_phone);
 
 
+
+
         client_trips=(Button) findViewById(R.id.client_trips_btn);
         my_bids=(Button) findViewById(R.id.my_bids_btn);
         my_accepted_bids=(Button) findViewById(R.id.accepted_bis_btn);
@@ -79,7 +82,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Load trips of the clients of Rental's city
         Set_profile();
-
 
         //
         client_trips.setOnClickListener(new View.OnClickListener() {
@@ -235,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
        Picasso.with(getApplicationContext())
-                .load("http://rixwanxharif.000webhostapp.com/company/uploads/" + pic_path)
+                .load("http://rixwanxharif.000webhostapp.com/" + pic_path)
                 .networkPolicy(NetworkPolicy.OFFLINE)
                 .into(profile_imageView, new Callback() {
                     @Override
@@ -247,13 +249,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     public void onError() {
                         //Try again online if cache failed
                         Picasso.with(getApplicationContext())
-                                .load("http://rixwanxharif.000webhostapp.com/company/uploads/" + pic_path)
+                                .load("http://rixwanxharif.000webhostapp.com/" + pic_path)
                                 .into(profile_imageView);
                     }
                 });
-
-
-
     }
 
     //back key

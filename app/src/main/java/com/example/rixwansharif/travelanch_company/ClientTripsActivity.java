@@ -158,7 +158,7 @@ public class ClientTripsActivity extends AppCompatActivity {
         custom_row_for_trip_company cr = new custom_row_for_trip_company(this, parse_json_trip_company.trip_id,parse_json_trip_company.trip_destination,
                 parse_json_trip_company.trip_pickup_location,parse_json_trip_company.trip_pick_time,parse_json_trip_company.trip_drop_time,
                 parse_json_trip_company.trip_vehicle,parse_json_trip_company.trip_start_date,parse_json_trip_company.trip_end_date,
-                parse_json_trip_company.trip_driver, parse_json_trip_company.trip_ac,parse_json_trip_company.user_f_name,parse_json_trip_company.user_l_name
+                parse_json_trip_company.trip_driver, parse_json_trip_company.trip_ac,parse_json_trip_company.trip_date_time,parse_json_trip_company.user_f_name,parse_json_trip_company.user_l_name
                 ,parse_json_trip_company.user_image,parse_json_trip_company.user_phone);
 
         TripListView.setAdapter(cr);
@@ -177,6 +177,7 @@ public class ClientTripsActivity extends AppCompatActivity {
         private String[] trip_end_date;
         private String[] trip_driver;
         private String[] trip_ac;
+        private String[] trip_date_time;
         private String[] user_f_name;
         private String[] user_l_name;
         private String[] user_image;
@@ -191,7 +192,7 @@ public class ClientTripsActivity extends AppCompatActivity {
 
         public custom_row_for_trip_company(Activity context,String[] trip_id, String[] trip_destination, String[] trip_pickup_location,String[] trip_pick_time,
                                            String[] trip_drop_time,String[] trip_vehicle, String[] trip_start_date,String[] trip_end_date,String[] driver,
-                                           String[] ac,String[] user_f_name,String[] user_l_name,String[] user_image,String[] user_phone)
+                                           String[] ac,String[] trip_date_time,String[] user_f_name,String[] user_l_name,String[] user_image,String[] user_phone)
         {
             super(context, R.layout.custom_row_for_trip,trip_id);
             this.context = context;
@@ -206,6 +207,7 @@ public class ClientTripsActivity extends AppCompatActivity {
             this.trip_end_date = trip_end_date;
             this.trip_driver = driver;
             this.trip_ac = ac;
+            this.trip_date_time = trip_date_time;
             this.user_f_name=user_f_name;
             this.user_l_name=user_l_name;
             this.user_image=user_image;
@@ -228,6 +230,7 @@ public class ClientTripsActivity extends AppCompatActivity {
             TextView to_date = (TextView) listViewItem.findViewById(R.id.customer_end_date_to_rental);
             TextView driver = (TextView) listViewItem.findViewById(R.id.customer_driver_to_rental);
             TextView ac = (TextView) listViewItem.findViewById(R.id.customer_AC_to_rental);
+            TextView date_time = (TextView) listViewItem.findViewById(R.id.client_trips_date_time);
             TextView pick_time = (TextView) listViewItem.findViewById(R.id.customer_start_time_to_rental);
             TextView drop_time = (TextView) listViewItem.findViewById(R.id.customer_end_time_to_rental);
             TextView no_of_bids = (TextView) listViewItem.findViewById(R.id.no_of_bids);
@@ -254,6 +257,7 @@ public class ClientTripsActivity extends AppCompatActivity {
             to_date.setText(trip_end_date[position]);
             pick_time.setText(trip_pick_time[position]);
             drop_time.setText(trip_drop_time[position]);
+            date_time.setText(trip_date_time[position]);
             no_of_bids.setText("5");
             trip_ID=trip_id[position];
 

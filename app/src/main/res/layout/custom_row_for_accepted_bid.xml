@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/accepted_relative_layout"
         android:layout_centerHorizontal="true"
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="#ad7ab5"
         android:id="@+id/accepted_bid_trip_details_tray"
         android:paddingBottom="10dp">
@@ -211,8 +211,8 @@
             android:textColor="#f3f3f3"
             android:textSize="@dimen/s17"
             android:layout_below="@+id/textView23"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -248,6 +248,20 @@
             android:layout_toRightOf="@+id/textView11"
             android:layout_toEndOf="@+id/textView11" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date/Time"
+            android:id="@+id/tt_dd_date_time_textview"
+            android:textColor="#f3f3f3"
+            android:textSize="@dimen/s17"
+            android:layout_below="@+id/textView9"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginBottom="@dimen/m8" />
+
 
     </RelativeLayout>
 
@@ -257,7 +271,7 @@
         android:layout_below="@+id/accepted_relative_layout"
         android:layout_centerHorizontal="true"
         android:background="#ad7ab5"
-        android:visibility="visible"
+        android:visibility="gone"
         android:id="@+id/accepted_bid_bid_details_tray">
 
         <ImageButton

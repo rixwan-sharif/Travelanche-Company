@@ -10,7 +10,7 @@ public class config {
 
     public static final String SendOtp_URL = "http://rixwanxharif.000webhostapp.com/company/sendotp.php";
 
-    public static final String Fetch_Trip_URL = "http://rixwanxharif.000webhostapp.com/company/fetchtripjsonforcompany.php";
+    public static final String Fetch_Trip_URL = "http://rixwanxharif.000webhostapp.com/company/client_trips.php";
 
     public static final String Company_Bids_URL = "http://rixwanxharif.000webhostapp.com/company/company_bids.php";
 

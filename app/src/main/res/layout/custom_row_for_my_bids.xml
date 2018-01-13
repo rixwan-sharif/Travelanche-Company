@@ -248,6 +248,18 @@
             android:layout_alignTop="@+id/t_d_pick_time_textview"
             android:layout_toRightOf="@+id/textView11"
             android:layout_toEndOf="@+id/textView11" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date/Time"
+            android:id="@+id/t_d_date_time_textview"
+            android:textColor="#f3f3f3"
+            android:textSize="@dimen/s17"
+            android:layout_below="@+id/t_d_drop_time_textview"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_marginTop="10dp" />
 
 
     </RelativeLayout>
