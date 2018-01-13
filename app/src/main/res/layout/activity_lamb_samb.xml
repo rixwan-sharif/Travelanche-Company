@@ -4,6 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ad7ab5">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="@dimen/activity_login_carlogo_width"
         android:layout_height="@dimen/activity_login_carlogo_height"
@@ -86,5 +93,7 @@
         android:text="Bid"
         android:textSize="@dimen/s20"
         android:id="@+id/lamb_samb_bid_btn" />
+    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

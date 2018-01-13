@@ -10,5 +10,5 @@
         android:layout_centerHorizontal="true"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"
-        android:padding="3dp" />
+        android:padding="@dimen/p3" />
 </RelativeLayout>

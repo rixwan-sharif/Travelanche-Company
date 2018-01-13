@@ -61,6 +61,11 @@
             android:parentActivityName=".MainActivity">
         </activity>
         <activity
+            android:name=".preview_fullimage"
+            android:label="@string/title_activity_my_bids"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
             android:name=".MyAcceptedBidsActivity"
             android:label="@string/title_activity_my_accepted_bids"
             android:parentActivityName=".MainActivity">
