@@ -293,7 +293,7 @@ public class MyAcceptedBidsActivity extends AppCompatActivity {
                 vehicle_detail_text.setText(bid_vehicle[position]);
                 rate_per_day_text.setText(bid_rate_per_day[position]);
             }
-*/
+
             // Animation
             Button trip_btn = (Button) listViewItem.findViewById(R.id.accepted_bid_trip_btn);
             Button bid_btn = (Button) listViewItem.findViewById(R.id.accepted_bid_bid_btn);
