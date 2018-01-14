@@ -19,6 +19,7 @@ public class parse_json_trip_company {
     public static String[] trip_end_date;
     public static String[] trip_driver;
     public static String[] trip_ac;
+    public static String[] trip_date_time;
     public static String[] user_f_name;
     public static String[] user_l_name;
     public static String[] user_image;
@@ -53,6 +54,8 @@ public class parse_json_trip_company {
             trip_end_date = new String[my_trips.length()];
             trip_driver = new String[my_trips.length()];
             trip_ac = new String[my_trips.length()];
+            trip_ac = new String[my_trips.length()];
+            trip_date_time = new String[my_trips.length()];
             user_f_name = new String[my_trips.length()];
             user_l_name = new String[my_trips.length()];
             user_image = new String[my_trips.length()];
@@ -73,6 +76,7 @@ public class parse_json_trip_company {
                 trip_end_date[i] = jo.getString("date_to");
                 trip_driver[i] = jo.getString("driver");
                 trip_ac[i] = jo.getString("ac");
+                trip_date_time[i] = jo.getString("date_time");
                 user_f_name[i] = jo.getString("user_f_name");
                 user_l_name[i] = jo.getString("user_l_name");
                 user_image[i] = jo.getString("user_image");

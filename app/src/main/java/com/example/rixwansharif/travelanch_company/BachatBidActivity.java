@@ -268,6 +268,7 @@ public class BachatBidActivity extends AppCompatActivity {
 
                     params.put("trip_id", Trip_id);
                     params.put("vehicle", Vehicle);
+                    params.put("driver", Driver);
                     params.put("company_name", Company_Name);
                     params.put("company_phone", Company_Phone);
                     params.put("rate_per_day", Rate_Per_Day+"");

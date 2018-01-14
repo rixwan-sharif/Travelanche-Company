@@ -152,8 +152,9 @@ public class MyBidsActivity extends AppCompatActivity {
 
         custom_row_for_my_bid cr=new custom_row_for_my_bid(this, parse_json_my_bids.id, parse_json_my_bids.trip_destination, parse_json_my_bids.trip_pickup_location,
                  parse_json_my_bids.trip_vehicle, parse_json_my_bids.trip_start_date, parse_json_my_bids.trip_end_date,
-                 parse_json_my_bids.trip_pick_time, parse_json_my_bids.trip_drop_time, parse_json_my_bids.trip_driver, parse_json_my_bids.trip_ac, parse_json_my_bids.bid_rate_per_day,
-                 parse_json_my_bids.bid_total_fare, parse_json_my_bids.bids_on_trip, parse_json_my_bids.bid_vehicle,parse_json_my_accepted_bids.bid_vehicle_img);
+                 parse_json_my_bids.trip_pick_time, parse_json_my_bids.trip_drop_time, parse_json_my_bids.trip_driver, parse_json_my_bids.trip_ac,
+                parse_json_my_bids.trip_date_time, parse_json_my_bids.bid_rate_per_day, parse_json_my_bids.bid_total_fare,
+                parse_json_my_bids.bids_on_trip, parse_json_my_bids.bid_vehicle, parse_json_my_accepted_bids.bid_vehicle_img);
         MyBidsListView.setAdapter(cr);
     }
 
@@ -172,7 +173,7 @@ public class MyBidsActivity extends AppCompatActivity {
         private String[] trip_end_date;
         private String[] trip_driver;
         private String[] trip_ac;
-
+        private String[] trip_date_time;
 
 
         //Bid
@@ -188,7 +189,7 @@ public class MyBidsActivity extends AppCompatActivity {
 
         public custom_row_for_my_bid(Activity context, String[] id, String[] trip_destination, String[] trip_pickup_location, String[] trip_vehicle,
                                            String[] trip_start_date, String[] trip_end_date,String[] trip_pick_time, String[] trip_drop_time,  String[] driver,
-                                           String[] ac, String[] bid_rate_per_day,String[] bid_total_fare,String[] bids_on_trip,String[] bid_vehicle,
+                                           String[] ac,String[] trip_date_time ,String[] bid_rate_per_day,String[] bid_total_fare,String[] bids_on_trip,String[] bid_vehicle,
                                            String[] bid_vehicle_img) {
             super(context, R.layout.custom_row_for_my_bids,id);
             this.context = context;
@@ -203,7 +204,7 @@ public class MyBidsActivity extends AppCompatActivity {
             this.trip_end_date = trip_end_date;
             this.trip_driver = driver;
             this.trip_ac = ac;
-
+            this.trip_date_time = trip_date_time;
             //
             this.bid_rate_per_day = bid_rate_per_day;
             this.bid_total_fare = bid_total_fare;
@@ -230,7 +231,7 @@ public class MyBidsActivity extends AppCompatActivity {
             TextView date_to_text = (TextView) listViewItem.findViewById(R.id.t_d_to_textview);
             TextView pick_time_text = (TextView) listViewItem.findViewById(R.id.t_d_pick_time_textview);
             TextView drop_time_text = (TextView) listViewItem.findViewById(R.id.t_d_drop_time_textview);
-
+            TextView date_time_text = (TextView) listViewItem.findViewById(R.id.t_d_date_time_textview);
             //Bid
 
             TextView rate_per_day_text = (TextView) listViewItem.findViewById(R.id.my_bid_rate_text);
@@ -254,6 +255,7 @@ public class MyBidsActivity extends AppCompatActivity {
             date_to_text.setText(trip_end_date[position]);
             pick_time_text.setText(trip_pick_time[position]);
             drop_time_text.setText(trip_drop_time[position]);
+            date_time_text.setText(trip_date_time[position]);
 
             if (trip_driver[position].equals("1") && trip_ac[position].equals("1")) {
                 driver_ac_text.setText("Yes / Yes");

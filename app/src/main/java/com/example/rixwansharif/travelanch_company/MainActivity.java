@@ -18,8 +18,13 @@ import android.util.Config;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+<<<<<<< HEAD
+import android.widget.RelativeLayout;
+=======
 import android.widget.ImageView;
+>>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
@@ -32,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle mytoggle;
     private Toolbar mtoolbar;
     private NavigationView navigationView;
-
 
     private Button client_trips,my_bids,my_accepted_bids;
     private CircleImageView profile_imageView;
@@ -63,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         phone_number=(TextView) findViewById(R.id.profile_user_phone);
 
 
+
+
         client_trips=(Button) findViewById(R.id.client_trips_btn);
         my_bids=(Button) findViewById(R.id.my_bids_btn);
         my_accepted_bids=(Button) findViewById(R.id.accepted_bis_btn);
@@ -82,6 +88,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Load trips of the clients of Rental's city
         Set_profile();
 
+<<<<<<< HEAD
+=======
         profile_imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
 
+>>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
         //
         client_trips.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -266,9 +275,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 .into(profile_imageView);
                     }
                 });
-
-
-
     }
 
     //back key
