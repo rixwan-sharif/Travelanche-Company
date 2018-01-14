@@ -219,7 +219,7 @@ public class MyAcceptedBidsActivity extends AppCompatActivity {
             final LayoutInflater inflater = context.getLayoutInflater();
             final View listViewItem = inflater.inflate(R.layout.custom_row_for_accepted_bid, null, true);
 
-
+/*
             //Trip details
             TextView destination_text = (TextView) listViewItem.findViewById(R.id.tt_dd_destination_textview);
             TextView trip_vehicle_text = (TextView) listViewItem.findViewById(R.id.tt_dd_vehcle_textview);
@@ -333,7 +333,7 @@ public class MyAcceptedBidsActivity extends AppCompatActivity {
                 }
             });
 
-
+*/
             return listViewItem ;
 
         }
