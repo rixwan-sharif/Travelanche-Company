@@ -18,11 +18,11 @@ import android.util.Config;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-<<<<<<< HEAD
+
 import android.widget.RelativeLayout;
-=======
+
 import android.widget.ImageView;
->>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
+
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -88,8 +88,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Load trips of the clients of Rental's city
         Set_profile();
 
-<<<<<<< HEAD
-=======
+
         profile_imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
 
->>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
+
         //
         client_trips.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -255,23 +254,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         username.setText(name);
         phone_number.setText(phone);
 
-        final String pic_path=sharedPreferences.getString(config.Image_SHARED_PREF, "Not Available");
+        //final String pic_path=sharedPreferences.getString(config.Image_SHARED_PREF, "Not Available");
 
 
-       Picasso.with(getApplicationContext())
-                .load("http://rixwanxharif.000webhostapp.com/" + pic_path)
+        Picasso.with(getApplicationContext())
+                .load("http://rixwanxharif.000webhostapp.com/uploads/" + "IMG_20180110_013436_362.jpg")
                 .networkPolicy(NetworkPolicy.OFFLINE)
                 .into(profile_imageView, new Callback() {
                     @Override
                     public void onSuccess() {
 
                     }
-
                     @Override
                     public void onError() {
                         //Try again online if cache failed
                         Picasso.with(getApplicationContext())
-                                .load("http://rixwanxharif.000webhostapp.com/" + pic_path)
+                                .load("http://rixwanxharif.000webhostapp.com/uploads/" + "IMG_20180110_013436_362.jpg")
                                 .into(profile_imageView);
                     }
                 });

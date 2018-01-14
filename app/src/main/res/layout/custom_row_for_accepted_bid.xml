@@ -14,7 +14,7 @@
         android:visibility="visible"
         android:id="@+id/accepted_relative_layout">
 
-<<<<<<< HEAD
+
         <Button
             android:layout_width="180dp"
             android:layout_height="50dp"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/accepted_relative_layout"
         android:layout_centerHorizontal="true"
-        android:visibility="visible"
+        android:visibility="gone"
         android:background="#ad7ab5"
         android:id="@+id/accepted_bid_trip_details_tray"
         android:paddingBottom="10dp">
@@ -249,9 +249,6 @@
             android:layout_alignTop="@+id/tt_dd_pick_time_textview"
             android:layout_toRightOf="@+id/textView11"
             android:layout_toEndOf="@+id/textView11" />
-=======
->>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -270,13 +267,13 @@
     </RelativeLayout>
 
     <RelativeLayout
-<<<<<<< HEAD
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/accepted_relative_layout"
         android:layout_centerHorizontal="true"
         android:background="#ad7ab5"
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/accepted_bid_bid_details_tray">
 
         <ImageButton
@@ -315,8 +312,7 @@
             android:layout_alignStart="@+id/textView"
             android:layout_marginTop="5dp"
             android:textColor="#ffffff" />
-=======
->>>>>>> fb35918c8913d42907aa3abfe47610f76d242e57
+
 
         android:layout_width="370dp"
         android:layout_height="260dp"

@@ -22,67 +22,49 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="@dimen/h65"
+            android:layout_height="65dp"
             android:text="Trips"
             android:id="@+id/client_trips_btn"
             android:background="@drawable/trips"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-<<<<<<< HEAD
-            android:layout_marginBottom="@dimen/activity_main__page_sign_up_btn_width"
-            android:layout_marginLeft="@dimen/m30"
-            android:layout_marginRight="@dimen/m30"
-=======
-            android:layout_marginBottom="210dp"
+            android:layout_marginBottom="180dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
->>>>>>> 1ce5f1d78a66e73ce3895a605918094e3e9ca986
             android:textStyle="bold"
-            android:textSize="@dimen/s20"
+            android:textSize="20sp"
             android:textAllCaps="false"
             android:textColor="#ad7ab5" />
         <Button
             android:layout_width="match_parent"
-            android:layout_height="@dimen/h65"
+            android:layout_height="65dp"
             android:text="Your Bids"
             android:id="@+id/my_bids_btn"
             android:background="@drawable/bidsss"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-<<<<<<< HEAD
-            android:layout_marginBottom="@dimen/m100"
-            android:layout_marginLeft="@dimen/m30"
-            android:layout_marginRight="@dimen/m30"
-=======
-            android:layout_marginBottom="130dp"
+            android:layout_marginBottom="100dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
->>>>>>> 1ce5f1d78a66e73ce3895a605918094e3e9ca986
             android:textStyle="bold"
-            android:textSize="@dimen/s20"
+            android:textSize="20sp"
             android:textAllCaps="false"
             android:textColor="#ad7ab5" />
         <Button
             android:layout_width="match_parent"
-            android:layout_height="@dimen/h65"
+            android:layout_height="65dp"
             android:text="Accepted Bids"
             android:id="@+id/accepted_bis_btn"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-<<<<<<< HEAD
-            android:layout_marginBottom="@dimen/m20"
-            android:layout_marginLeft="@dimen/m30"
-            android:layout_marginRight="@dimen/m30"
-=======
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
->>>>>>> 1ce5f1d78a66e73ce3895a605918094e3e9ca986
             android:textStyle="bold"
-            android:textSize="@dimen/s20"
+            android:textSize="20sp"
             android:textAllCaps="false"
             android:textColor="#ad7ab5"
-            android:paddingLeft="@dimen/p20"
+            android:paddingLeft="20dp"
             android:background="@drawable/checke" />
 
     </RelativeLayout>
