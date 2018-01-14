@@ -232,13 +232,13 @@ public class MyAcceptedBidsActivity extends AppCompatActivity {
             TextView date_time_text = (TextView) listViewItem.findViewById(R.id.tt_dd_date_time_textview);
             //Bid
 
-            TextView rate_per_day_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_rate_text);
-            TextView total_fare_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_total_fare_txt);
+            //TextView rate_per_day_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_rate_text);
+            //TextView total_fare_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_total_fare_txt);
             //TextView no_bid_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_bids_text);
 
-            TextView vehicle_detail_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_vehicle_detail_text);
-            TextView vehiclee_detail_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_vehiclee_detail_text);
-            ImageView vehicle_img = (ImageView) listViewItem.findViewById(R.id.accepted_bid_vehicle_image);
+            //TextView vehicle_detail_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_vehicle_detail_text);
+            //TextView vehiclee_detail_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_vehiclee_detail_text);
+            //ImageView vehicle_img = (ImageView) listViewItem.findViewById(R.id.accepted_bid_vehicle_image);
 
 
 
@@ -274,7 +274,7 @@ public class MyAcceptedBidsActivity extends AppCompatActivity {
             //Image Code
 
             //no_bid_text.setText(bids_on_trip[position]);
-
+/*
             if (bid_rate_per_day[position].equals("0")) {
                 rate_per_day_text.setText("N/A");
                 vehicle_detail_text.setText("N/A");
