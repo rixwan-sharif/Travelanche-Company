@@ -229,6 +229,7 @@
         android:layout_marginTop="10dp"
         >
         <Button
+            android:layout_weight="1"
             android:layout_width="140dp"
             android:layout_height="fill_parent"
             android:textColor="#ffffff"
