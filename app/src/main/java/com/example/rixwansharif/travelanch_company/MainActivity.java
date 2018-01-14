@@ -102,10 +102,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b8b7e162ed46091eece3c47876bfb4cff8dc4622
         //
         client_trips.setOnClickListener(new View.OnClickListener() {
             @Override
