@@ -245,7 +245,9 @@
     <dimen name="m110">110dp</dimen>
     <dimen name="m90">90dp</dimen>
     <dimen name="m210">210dp</dimen>
-    <dimen name="h65">65dp</dimen>
+
+    <dimen name="h265">265dp</dimen>
+
 
 
 </resources>
