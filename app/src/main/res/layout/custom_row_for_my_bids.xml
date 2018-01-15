@@ -23,7 +23,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="30dp"
-            android:background="@drawable/btn_shape"
+            android:background="@drawable/btn_shape_white"
             android:textColor="#ad7ab5"
             android:visibility="visible" />
 
@@ -37,7 +37,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginRight="10dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/btn_shape"
+            android:background="@drawable/btn_shape_white"
             android:textColor="#ad7ab5"
             android:visibility="visible" />
     </RelativeLayout>
@@ -401,7 +401,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="30dp"
                 android:text="Edit"
-                android:background="@drawable/btn_shape"
+                android:background="@drawable/btn_shape_white"
                 android:textColor="#ad7ab5"
                 android:allowUndo="true" />
 
@@ -415,7 +415,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="10dp"
                 android:layout_marginEnd="30dp"
-                android:background="@drawable/btn_shape"
+                android:background="@drawable/btn_shape_white"
                 android:textColor="#ad7ab5" />
 
         </RelativeLayout>

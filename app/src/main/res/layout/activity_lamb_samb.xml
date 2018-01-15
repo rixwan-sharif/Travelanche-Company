@@ -105,7 +105,7 @@
         android:layout_marginTop="@dimen/m15"
         android:layout_width="@dimen/activity_forgot_password_forgot_set_new_pass_btn_width"
         android:layout_height="@dimen/m50"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/btn_shape_white"
         android:layout_gravity="center"
         android:textColor="#ad7ab5"
         android:text="Bid"

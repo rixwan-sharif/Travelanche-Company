@@ -29,11 +29,16 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.NetworkPolicy;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyAcceptedBidsActivity extends AppCompatActivity {
 
@@ -218,6 +223,62 @@ public class MyAcceptedBidsActivity extends AppCompatActivity {
         public View getView(final int position, View convertView, ViewGroup parent) {
             final LayoutInflater inflater = context.getLayoutInflater();
             final View listViewItem = inflater.inflate(R.layout.custom_row_for_accepted_bid, null, true);
+
+
+            Button Trip_Button = (Button) listViewItem.findViewById(R.id.accepted_bid_trip_btn);
+            Button Bid_Button = (Button) listViewItem.findViewById(R.id.accepted_bid_bid_btn);
+            TextView Trip_Name = (TextView) listViewItem.findViewById(R.id.accepted_bid_trip_name);
+            TextView Vehicle_Name = (TextView) listViewItem.findViewById(R.id.accepted_bid_vehilce_name);
+            TextView Bid_Date = (TextView) listViewItem.findViewById(R.id.accepted_bid_date_textview);
+            TextView Bid_Time = (TextView) listViewItem.findViewById(R.id.accepted_bid_time_textview);
+            final CircleImageView Client_Pic=(CircleImageView) listViewItem.findViewById(R.id.accepted_bid_client_pic);
+            final CircleImageView Vehicle_Pic=(CircleImageView) listViewItem.findViewById(R.id.accepted_bid_vehicle_pic);
+
+            Trip_Name.setText(trip_destination[position]);
+            Vehicle_Name.setText(bid_vehicle[position]);
+            Bid_Date.setText(trip_date_time[position]);
+            Bid_Time.setText(trip_date_time[position]);
+
+            Picasso.with(getApplicationContext())
+                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "IMG_20180110_013436_362.jpg")
+                    .networkPolicy(NetworkPolicy.OFFLINE)
+                    .into(Client_Pic, new Callback() {
+                        @Override
+                        public void onSuccess() {}
+                        @Override
+                        public void onError() {
+                            Picasso.with(getApplicationContext())
+                                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "IMG_20180110_013436_362.jpg")
+                                    .into(Client_Pic);}});
+            Picasso.with(getApplicationContext())
+                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "vehilce_image.jpg")
+                    .networkPolicy(NetworkPolicy.OFFLINE)
+                    .into(Vehicle_Pic, new Callback() {
+                        @Override
+                        public void onSuccess() {}
+                        @Override
+                        public void onError() {
+                            Picasso.with(getApplicationContext())
+                                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "vehilce_image.jpg")
+                                    .into(Vehicle_Pic);}});
+
+            Trip_Button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getApplicationContext(), "Cheema Sab kuch kr k wkhaao", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            Bid_Button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getApplicationContext(), "Cheema Sab kuch kr k wkhaao", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+
+
+
 
 /*
             //Trip details

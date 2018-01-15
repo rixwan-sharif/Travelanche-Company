@@ -25,7 +25,7 @@
         android:textAllCaps="false"
         android:padding="@dimen/p12"
         android:text="Bachat Package"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/btn_shape_white"
         android:textColor="#ad7ab5"
         android:textSize="@dimen/s14">
 
@@ -40,7 +40,7 @@
         android:textAllCaps="false"
         android:padding="@dimen/p12"
         android:text="Lamb Samb Package"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/btn_shape_white"
         android:textColor="#ad7ab5"
         android:textSize="@dimen/s14">
 

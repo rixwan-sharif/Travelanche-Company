@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Upload Photo"
         android:id="@+id/buttonUpload"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/btn_shape_white"
         android:textColor="#ad7ab5"
         android:layout_marginTop="@dimen/m75"
         android:layout_below="@+id/imageView"
