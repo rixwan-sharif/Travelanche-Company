@@ -8,8 +8,7 @@
 
 
 
-=======
->>>>>>> b8b7e162ed46091eece3c47876bfb4cff8dc4622
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

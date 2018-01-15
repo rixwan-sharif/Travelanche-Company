@@ -172,8 +172,8 @@
         android:id="@+id/customer_end_date_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
-        android:layout_marginTop="-24dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginTop="@dimen/_m24"
+        android:layout_marginLeft="@dimen/m253"
         android:textColor="#000000"
         />
     <TextView
@@ -181,8 +181,8 @@
         android:layout_height="wrap_content"
         android:text="Pick :"
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="30dp"
-        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/m30"
+        android:textSize="@dimen/s20"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/customer_pickup_location_to_rental"
          />
@@ -192,9 +192,9 @@
         android:text="Medium text"
         android:id="@+id/customer_start_time_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="20sp"
-        android:layout_marginTop="-24dp"
-        android:layout_marginLeft="90dp"
+        android:textSize="@dimen/s20"
+        android:layout_marginTop="@dimen/_m24"
+        android:layout_marginLeft="@dimen/m90"
         android:textColor="#000000"
         />
     <TextView
@@ -203,9 +203,9 @@
         android:text="Drop :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="210dp"
-        android:textSize="20sp"
-        android:layout_marginTop="-24dp"
+        android:layout_marginLeft="@dimen/m210"
+        android:textSize="@dimen/s20"
+        android:layout_marginTop="@dimen/_m24"
         android:layout_below="@+id/customer_pickup_location_to_rental"
        />
     <TextView
@@ -214,9 +214,9 @@
         android:text="Medium text"
         android:id="@+id/customer_end_time_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="20sp"
-        android:layout_marginTop="-24dp"
-        android:layout_marginLeft="265dp"
+        android:textSize="@dimen/s20"
+        android:layout_marginTop="@dimen/_m24"
+        android:layout_marginLeft="@dimen/h265"
         android:textColor="#000000"
         />
 
@@ -225,10 +225,10 @@
         android:layout_height="wrap_content"
         android:text="Time"
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="30dp"
-        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/m30"
+        android:textSize="@dimen/s20"
         android:id="@+id/client_trips_date_time"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/m10"
         android:layout_below="@+id/customer_pickup_location_to_rental"
         />
 
@@ -236,9 +236,10 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="46dp"
+        android:layout_height="@dimen/m46"
         android:id="@+id/company_trip_bottom_tab"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/m10"
+
         >
         <Button
             android:layout_weight="1"
@@ -248,11 +249,12 @@
             android:id="@+id/rental_status_button"
             android:text="Status : pending"
             android:background="#ad7ab5"
-            android:textSize="13dp"
+            android:textSize="@dimen/s13"
             android:textAllCaps="false"
             android:paddingRight="15dp"
             />
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="2dp"
@@ -285,6 +287,7 @@
         </LinearLayout>
 
        <Button
+           android:layout_weight="1"
            android:layout_width="140dp"
            android:layout_height="match_parent"
            android:background="#ad7ab5"
