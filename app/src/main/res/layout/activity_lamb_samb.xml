@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
     <LinearLayout
-        android:layout_width="@dimen/activity_login_carlogo_width"
-        android:layout_height="@dimen/activity_login_carlogo_height"
+        android:layout_width="@dimen/w200"
+        android:layout_height="@dimen/h240"
         android:layout_marginTop="@dimen/m50"
         android:background="@drawable/car_logo"
         android:gravity="center"
@@ -103,7 +103,7 @@
         android:singleLine="true" />
     <Button
         android:layout_marginTop="@dimen/m15"
-        android:layout_width="@dimen/activity_forgot_password_forgot_set_new_pass_btn_width"
+        android:layout_width="@dimen/w120"
         android:layout_height="@dimen/m50"
         android:background="@drawable/btn_shape"
         android:layout_gravity="center"
