@@ -2,14 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#c9a8ce">
+    android:background="@drawable/main_back">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:background="#ad7ab5"
         android:visibility="visible"
         android:id="@+id/accepted_relative_layout">
@@ -43,10 +42,10 @@
         android:layout_width="match_parent"
         android:layout_height="260dp"
         android:background="@drawable/back_of"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_below="@+id/accepted_relative_layout"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="15dp">
 
 
 
