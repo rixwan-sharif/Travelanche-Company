@@ -4,13 +4,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Config;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,11 +30,16 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.NetworkPolicy;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyBidsActivity extends AppCompatActivity {
 
@@ -48,7 +53,7 @@ public class MyBidsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_bids);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ad7ab5")));
-        getSupportActionBar().setTitle("Back");
+        getSupportActionBar().setTitle("My Bids");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         //
@@ -153,8 +158,9 @@ public class MyBidsActivity extends AppCompatActivity {
         custom_row_for_my_bid cr=new custom_row_for_my_bid(this, parse_json_my_bids.id, parse_json_my_bids.trip_destination, parse_json_my_bids.trip_pickup_location,
                  parse_json_my_bids.trip_vehicle, parse_json_my_bids.trip_start_date, parse_json_my_bids.trip_end_date,
                  parse_json_my_bids.trip_pick_time, parse_json_my_bids.trip_drop_time, parse_json_my_bids.trip_driver, parse_json_my_bids.trip_ac,
-                parse_json_my_bids.trip_date_time, parse_json_my_bids.bid_rate_per_day, parse_json_my_bids.bid_total_fare,
-                parse_json_my_bids.bids_on_trip, parse_json_my_bids.bid_vehicle, parse_json_my_accepted_bids.bid_vehicle_img);
+                parse_json_my_bids.bid_date,parse_json_my_bids.bid_time, parse_json_my_bids.bid_rate_per_day, parse_json_my_bids.bid_total_fare,
+                parse_json_my_bids.bids_on_trip, parse_json_my_bids.bid_vehicle, parse_json_my_accepted_bids.bid_vehicle_img,
+                parse_json_my_bids.trip_date,parse_json_my_bids.trip_time);
         MyBidsListView.setAdapter(cr);
     }
 
@@ -173,8 +179,8 @@ public class MyBidsActivity extends AppCompatActivity {
         private String[] trip_end_date;
         private String[] trip_driver;
         private String[] trip_ac;
-        private String[] trip_date_time;
-
+        private String[] trip_date;
+        private String[] trip_time;
 
         //Bid
         private String[] bid_rate_per_day;
@@ -182,6 +188,8 @@ public class MyBidsActivity extends AppCompatActivity {
         private String[] bids_on_trip;
         private String[] bid_vehicle;
         private String[] bid_vehicle_img;
+        private String[] bid_date;
+        private String[] bid_time;
 
 
 
@@ -189,9 +197,9 @@ public class MyBidsActivity extends AppCompatActivity {
 
         public custom_row_for_my_bid(Activity context, String[] id, String[] trip_destination, String[] trip_pickup_location, String[] trip_vehicle,
                                            String[] trip_start_date, String[] trip_end_date,String[] trip_pick_time, String[] trip_drop_time,  String[] driver,
-                                           String[] ac,String[] trip_date_time ,String[] bid_rate_per_day,String[] bid_total_fare,String[] bids_on_trip,String[] bid_vehicle,
-                                           String[] bid_vehicle_img) {
-            super(context, R.layout.custom_row_for_my_bids,id);
+                                           String[] ac,String[] bid_date,String[] bid_time ,String[] bid_rate_per_day,String[] bid_total_fare,String[] bids_on_trip,String[] bid_vehicle,
+                                           String[] bid_vehicle_img,String[] trip_date,String[] trip_time) {
+            super(context, R.layout.custom_row_for_trip_bid,id);
             this.context = context;
 
             this.id = id;
@@ -204,14 +212,16 @@ public class MyBidsActivity extends AppCompatActivity {
             this.trip_end_date = trip_end_date;
             this.trip_driver = driver;
             this.trip_ac = ac;
-            this.trip_date_time = trip_date_time;
+            this.trip_date = trip_date;
+            this.trip_time = trip_time;
             //
             this.bid_rate_per_day = bid_rate_per_day;
             this.bid_total_fare = bid_total_fare;
             this.bid_vehicle = bid_vehicle;
             this.bid_vehicle_img = bid_vehicle_img;
             this.bids_on_trip = bids_on_trip;
-
+            this.bid_time = bid_time;
+            this.bid_date = bid_date;
 
         }
 
@@ -219,209 +229,110 @@ public class MyBidsActivity extends AppCompatActivity {
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
             final LayoutInflater inflater = context.getLayoutInflater();
-          final View listViewItem = inflater.inflate(R.layout.custom_row_for_my_bids, null, true);
+          final View listViewItem = inflater.inflate(R.layout.custom_row_for_trip_bid, null, true);
 
 
-            //Trip details
-            TextView destination_text = (TextView) listViewItem.findViewById(R.id.t_d_destination_textview);
-            TextView trip_vehicle_text = (TextView) listViewItem.findViewById(R.id.t_d_trip_vehcle_textview);
-            TextView pick_loc_text = (TextView) listViewItem.findViewById(R.id.t_d_pickup_loc_textview);
-            TextView driver_ac_text = (TextView) listViewItem.findViewById(R.id.t_d_ac_driver_textview);
-            TextView date_from_text = (TextView) listViewItem.findViewById(R.id.t_d_from_textview);
-            TextView date_to_text = (TextView) listViewItem.findViewById(R.id.t_d_to_textview);
-            TextView pick_time_text = (TextView) listViewItem.findViewById(R.id.t_d_pick_time_textview);
-            TextView drop_time_text = (TextView) listViewItem.findViewById(R.id.t_d_drop_time_textview);
-            TextView date_time_text = (TextView) listViewItem.findViewById(R.id.t_d_date_time_textview);
-            //Bid
+            Button Trip_Button = (Button) listViewItem.findViewById(R.id.accepted_bid_trip_btn);
+            Button Bid_Button = (Button) listViewItem.findViewById(R.id.accepted_bid_bid_btn);
+            TextView Trip_Name = (TextView) listViewItem.findViewById(R.id.accepted_bid_trip_name);
+            TextView Vehicle_Name = (TextView) listViewItem.findViewById(R.id.accepted_bid_vehilce_name);
+            TextView Bid_Date = (TextView) listViewItem.findViewById(R.id.accepted_bid_date_textview);
+            TextView Bid_Time = (TextView) listViewItem.findViewById(R.id.accepted_bid_time_textview);
+            final CircleImageView Client_Pic=(CircleImageView) listViewItem.findViewById(R.id.accepted_bid_client_pic);
+            final CircleImageView Vehicle_Pic=(CircleImageView) listViewItem.findViewById(R.id.accepted_bid_vehicle_pic);
 
-            TextView rate_per_day_text = (TextView) listViewItem.findViewById(R.id.my_bid_rate_text);
-            TextView total_fare_text = (TextView) listViewItem.findViewById(R.id.my_bid_total_fare_txt);
-            //TextView no_bid_text = (TextView) listViewItem.findViewById(R.id.accepted_bid_bids_text);
+            Trip_Name.setText(trip_destination[position]);
+            Vehicle_Name.setText(bid_vehicle[position]);
+            Bid_Date.setText(bid_date[position]);
+            Bid_Time.setText(bid_time[position]);
 
-            TextView vehicle_detail_text = (TextView) listViewItem.findViewById(R.id.my_bid_vehicle_detail_text);
-            TextView vehiclee_detail_text = (TextView) listViewItem.findViewById(R.id.my_bid_vehiclee_detail_text);
-            ImageView vehicle_img = (ImageView) listViewItem.findViewById(R.id.my_bid_vehicle_image);
-            Button delete_bid=(Button) listViewItem.findViewById(R.id.my_bis_dlt_bid_btn);
-            Button edit_bid=(Button) listViewItem.findViewById(R.id.my_bis_edit_bid_btn);
+            Picasso.with(getApplicationContext())
+                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "IMG_20180110_013436_362.jpg")
+                    .networkPolicy(NetworkPolicy.OFFLINE)
+                    .into(Client_Pic, new Callback() {
+                        @Override
+                        public void onSuccess() {}
+                        @Override
+                        public void onError() {
+                            Picasso.with(getApplicationContext())
+                                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "IMG_20180110_013436_362.jpg")
+                                    .into(Client_Pic);}});
+            Picasso.with(getApplicationContext())
+                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "vehilce_image.jpg")
+                    .networkPolicy(NetworkPolicy.OFFLINE)
+                    .into(Vehicle_Pic, new Callback() {
+                        @Override
+                        public void onSuccess() {}
+                        @Override
+                        public void onError() {
+                            Picasso.with(getApplicationContext())
+                                    .load("http://rixwanxharif.000webhostapp.com/uploads/" + "vehilce_image.jpg")
+                                    .into(Vehicle_Pic);}});
 
+            Trip_Button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    final AlphaAnimation buttonClick = new AlphaAnimation(1.0F, 0.2F);
+                    buttonClick.setDuration(175);
+                    v.startAnimation(buttonClick);
+                    Intent intent=new Intent(MyBidsActivity.this,ClientTripDetailActivity.class);
+                    intent.putExtra("trip_destination",trip_destination[position]);
+                    intent.putExtra("trip_pickup_location",trip_pickup_location[position]);
+                    intent.putExtra("trip_vehicle",trip_vehicle[position]);
+                    intent.putExtra("trip_driver",trip_driver[position]);
+                    intent.putExtra("trip_ac",trip_ac[position]);
+                    intent.putExtra("trip_start_date",trip_start_date[position]);
+                    intent.putExtra("trip_end_date",trip_end_date[position]);
+                    intent.putExtra("trip_pick_time","N/A");
+                    intent.putExtra("trip_drop_time","N/A");
+                    intent.putExtra("bids_on_trip",bids_on_trip[position]);
+                    intent.putExtra("trip_date",trip_date[position]);
+                    intent.putExtra("trip_time",trip_time[position]);
 
+                    startActivity(intent);
+                    Toast.makeText(getApplicationContext(), "Cheema Sab kuch kr k wkhaao", Toast.LENGTH_SHORT).show();
+                }
+            });
 
-            //Trip
-
-            destination_text.setText(trip_destination[position]);
-            trip_vehicle_text.setText(trip_vehicle[position]);
-            pick_loc_text.setText(trip_pickup_location[position]);
-            date_from_text.setText(trip_start_date[position]);
-            date_to_text.setText(trip_end_date[position]);
-            pick_time_text.setText(trip_pick_time[position]);
-            drop_time_text.setText(trip_drop_time[position]);
-            date_time_text.setText(trip_date_time[position]);
-
-            if (trip_driver[position].equals("1") && trip_ac[position].equals("1")) {
-                driver_ac_text.setText("Yes / Yes");
-            }
-            else if (trip_driver[position].equals("1") && trip_ac[position].equals("0"))
-            {
-                driver_ac_text.setText("Yes / No");
-            }
-            else if (trip_driver[position].equals("0") && trip_ac[position].equals("1"))
-            {
-                driver_ac_text.setText("No / Yes");
-            }
-            else
-            {
-                driver_ac_text.setText("No / No");
-            }
-
-            //no_bid_text.setText(bids_on_trip[position]);
-
-            if (bid_rate_per_day[position].equals("0")) {
-                rate_per_day_text.setText("N/A");
-                vehicle_detail_text.setText("N/A");
-
-                vehiclee_detail_text.setText(bid_vehicle[position]);
-                total_fare_text.setText(bid_total_fare[position]);
-            } else if (bid_total_fare[position].equals("0")) {
-                total_fare_text.setText("N/A");
-                vehiclee_detail_text.setText("N/A");
-
-                vehicle_detail_text.setText(bid_vehicle[position]);
-                rate_per_day_text.setText(bid_rate_per_day[position]);
-            } else {
-                vehiclee_detail_text.setText(bid_vehicle[position]);
-                total_fare_text.setText(bid_total_fare[position]);
-                vehicle_detail_text.setText(bid_vehicle[position]);
-                rate_per_day_text.setText(bid_rate_per_day[position]);
-            }
-
-            //Image Code
+            Bid_Button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    final AlphaAnimation buttonClick = new AlphaAnimation(1.0F, 0.2F);
+                    buttonClick.setDuration(175);
+                    v.startAnimation(buttonClick);
+                    Intent intent=new Intent(MyBidsActivity.this,CompanyBidDetailActivity.class);
+                    intent.putExtra("bid_vehicle_img", "vehilce_image.jpg");
+                    intent.putExtra("bid_vehicle", bid_vehicle[position]);
+                    intent.putExtra("bid_rate_per_day",bid_rate_per_day[position]);
+                    intent.putExtra("bid_total_fare",bid_total_fare[position]);
+                    intent.putExtra("my_bid_flag","1");
+                    intent.putExtra("bid_id",id[position]);
+                    intent.putExtra("Company_Phone",Company_phone_number);
+                    startActivity(intent);
+                    Toast.makeText(getApplicationContext(), "Cheema Sab kuch kr k wkhaao", Toast.LENGTH_SHORT).show();
+                }
+            });
 
 
 
 
             //Delete & Edit
-
-            delete_bid.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (cd.isConnected()) {
-
-                        final ProgressDialog loading = ProgressDialog.show(MyBidsActivity.this, "Please Wait", "Please wait...", false, true);
-
-                        Timer timer_a = new Timer();
-                        timer_a.schedule(new TimerTask() {
-                            @Override
-                            public void run() {
+/*
 
 
-                                MyBidsActivity.this.runOnUiThread(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        if (loading.isShowing()) {
-                                            loading.dismiss();
-                                            Toast.makeText(getApplicationContext(), "Something has gone wrong, Try again !", Toast.LENGTH_SHORT).show();
-                                        }
-                                    }
+*/
 
-                                });
-
-
-                            }
-                        }, 15000);
-
-                        //fetch
-                        StringRequest stringRequest = new StringRequest(Request.Method.POST, config.Delete_Company_Bid_URL,
-                                new Response.Listener<String>() {
-                                    @Override
-                                    public void onResponse(String response) {
-                                        loading.dismiss();
-                                        Toast.makeText(MyBidsActivity.this,response,Toast.LENGTH_LONG).show();
-
-                                    }
-                                },
-                                new Response.ErrorListener() {
-                                    @Override
-                                    public void onErrorResponse(VolleyError error) {
-                                        loading.dismiss();
-                                        Toast.makeText(MyBidsActivity.this,error.getMessage(),Toast.LENGTH_LONG).show();
-                                    }
-                                }) {
-                            @Override
-                            protected Map<String, String> getParams() throws AuthFailureError {
-                                Map<String, String> params = new HashMap<String, String>();
-                                params.put("company_phone", Company_phone_number);
-                                params.put("bid_id", id[position]);
-                                return params;
-                            }
-                        };
-
-                        RequestQueue requestQueue = Volley.newRequestQueue(MyBidsActivity.this);
-                        requestQueue.add(stringRequest);
-                    }
-                    else
-                    {
-                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MyBidsActivity.this);
-                        //alertDialogBuilder.setTitle("Your Title");
-                        // set dialog message
-                        alertDialogBuilder
-                                .setMessage("Check Internet Connection !")
-                                .setCancelable(false)
-                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                    }
-                                });
-                        //
-                        AlertDialog alertDialog = alertDialogBuilder.create();
-                        // show it
-                        alertDialog.show();
-                    }
-                }
-            });
-
-            // Animation
-            Button trip_btn = (Button) listViewItem.findViewById(R.id.my_bid_bid_trip_btn);
-            Button bid_btn = (Button) listViewItem.findViewById(R.id.my_bid_bid_btn);
-
-            final RelativeLayout trip_tray=(RelativeLayout) listViewItem.findViewById(R.id.my_bid_trip_details_tray);
-            final RelativeLayout bid_tray=(RelativeLayout) listViewItem.findViewById(R.id.my_bid_bid_details_tray);
-
-            trip_btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    final AlphaAnimation buttonClick = new AlphaAnimation(1.0F, 0.2F);
-                    buttonClick.setDuration(175);
-                    v.startAnimation(buttonClick);
-
-                    if (trip_tray.getVisibility() == View.GONE) {
-
-                        bid_tray.setVisibility(View.GONE);
-                        trip_tray.setVisibility(View.VISIBLE);
-                    }
-
-                }
-            });
-
-            bid_btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    final AlphaAnimation buttonClick = new AlphaAnimation(1.0F, 0.2F);
-                    buttonClick.setDuration(175);
-                    v.startAnimation(buttonClick);
-
-                    if (bid_tray.getVisibility() == View.GONE) {
-
-                        trip_tray.setVisibility(View.GONE);
-                        bid_tray.setVisibility(View.VISIBLE);
-                    }
-
-                }
-            });
 
             //end
             return listViewItem ;
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent(MyBidsActivity.this,MainActivity.class);
+        startActivity(intent);
     }
 
 }

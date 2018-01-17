@@ -21,13 +21,18 @@ public class parse_json_my_accepted_bids {
     public static String[] trip_end_date;
     public static String[] trip_driver;
     public static String[] trip_ac;
-    public static String[] trip_date_time;
+    public static String[] trip_date;
+    public static String[] trip_time;
+    public static String[] trip_id;
+    public static String[] trip_client_phone;
     //Bid
     public static String[] bid_rate_per_day;
     public static String[] bid_total_fare;
     public static String[] bids_on_trip;
     public static String[] bid_vehicle;
     public static String[] bid_vehicle_img;
+    public static String[] bid_accept_date;
+    public static String[] bid_accept_time;
 
     private JSONArray my_accepted_bids = null;
 
@@ -59,7 +64,13 @@ public class parse_json_my_accepted_bids {
             trip_drop_time =new String[my_accepted_bids.length()];
             trip_driver = new String[my_accepted_bids.length()];
             trip_ac=new String[my_accepted_bids.length()];
-            trip_date_time=new String[my_accepted_bids.length()];
+            trip_date = new String[my_accepted_bids.length()];
+            trip_time=new String[my_accepted_bids.length()];
+            trip_id = new String[my_accepted_bids.length()];
+            trip_client_phone=new String[my_accepted_bids.length()];
+
+            bid_accept_date=new String[my_accepted_bids.length()];
+            bid_accept_time=new String[my_accepted_bids.length()];
             bid_rate_per_day = new String[my_accepted_bids.length()];
             bid_total_fare =new String[my_accepted_bids.length()];
             bid_vehicle =new String[my_accepted_bids.length()];
@@ -81,7 +92,13 @@ public class parse_json_my_accepted_bids {
                 trip_drop_time[i]=jo.getString("drop_time");
                 trip_driver[i] = jo.getString("driver");
                 trip_ac[i] = jo.getString("ac");
-                trip_date_time[i] = jo.getString("date_time");
+                trip_date[i] = jo.getString("trip_date");
+                trip_time[i] = jo.getString("trip_time");
+                trip_id[i] = jo.getString("trip_id");
+                trip_client_phone[i] = jo.getString("client_phone");
+
+                bid_accept_date[i] = jo.getString("bid_date");
+                bid_accept_time[i] = jo.getString("bid_time");
                 bid_rate_per_day[i]=jo.getString("rate_per_day");
                 bid_total_fare[i] = jo.getString("total_fare");
                 bid_vehicle[i] = jo.getString("bid_vehicle");
