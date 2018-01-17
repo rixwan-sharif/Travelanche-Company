@@ -112,7 +112,7 @@
         android:layout_marginTop="@dimen/m10"
         android:layout_width="@dimen/w120"
         android:layout_height="@dimen/m50"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/btn_shape_white"
         android:layout_gravity="center"
         android:textColor="#ad7ab5"
         android:text="Bid"

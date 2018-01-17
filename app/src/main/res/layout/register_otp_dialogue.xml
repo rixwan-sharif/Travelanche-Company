@@ -31,7 +31,7 @@
 
         android:padding="12dp"
         android:text="Confirm"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/btn_shape_white"
         android:textColor="#ad7ab5">
 
     </android.support.v7.widget.AppCompatButton>
