@@ -12,7 +12,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);;
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen);
         getSupportActionBar().hide();
 
         //Check if user alredy login
@@ -39,7 +40,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     }
                     else {
 
-                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), MainPageActivity.class);
                         startActivity(intent);
                     }
                     finish();
@@ -50,6 +51,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             }
         };
+        //Starting Thread
+        myThread.start();
 
         //Starting Thread
         myThread.start();

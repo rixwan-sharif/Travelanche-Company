@@ -18,9 +18,8 @@
 
             <LinearLayout
                 android:layout_width="@dimen/w200"
-                android:layout_height="@dimen/h240"
+                android:layout_height="@dimen/h80"
                 android:layout_marginTop="@dimen/h80"
-
                 android:background="@drawable/car_logo"
                 android:id="@+id/linearLayout"
                 android:orientation="vertical"
@@ -30,10 +29,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/m50"
-
                 android:paddingLeft="@dimen/p10"
-
-
                 android:ems="10"
                 android:id="@+id/login_phone_number_text"
                 android:inputType="phone"

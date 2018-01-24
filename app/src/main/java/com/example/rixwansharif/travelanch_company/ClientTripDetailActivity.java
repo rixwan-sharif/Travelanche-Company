@@ -38,12 +38,6 @@ public class ClientTripDetailActivity extends AppCompatActivity {
 
         //getting intent data
         Bundle intent_data=getIntent().getExtras();
-        if(intent_data==null)
-        {
-            return;
-        }
-
-
         destination_text.setText(intent_data.getString("trip_destination"));
         trip_vehicle_text.setText(intent_data.getString("trip_vehicle"));
         pick_loc_text.setText(intent_data.getString("trip_pickup_location"));

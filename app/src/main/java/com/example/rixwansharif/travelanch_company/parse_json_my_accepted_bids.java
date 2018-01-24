@@ -34,6 +34,7 @@ public class parse_json_my_accepted_bids {
     public static String[] bid_accept_date;
     public static String[] bid_accept_time;
 
+
     private JSONArray my_accepted_bids = null;
 
     private String json;
@@ -77,6 +78,7 @@ public class parse_json_my_accepted_bids {
             bid_vehicle_img = new String[my_accepted_bids.length()];
             bids_on_trip=new String[my_accepted_bids.length()];
 
+
             for (int i = 0; i < my_accepted_bids.length(); i++)
             {
                 JSONObject jo = my_accepted_bids.getJSONObject(i);
@@ -104,6 +106,7 @@ public class parse_json_my_accepted_bids {
                 bid_vehicle[i] = jo.getString("bid_vehicle");
                 bid_vehicle_img[i]=jo.getString("vehicle_img");
                 bids_on_trip[i] = jo.getString("no_bids");
+
 
             }
         }
