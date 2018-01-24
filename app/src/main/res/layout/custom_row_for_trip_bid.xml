@@ -10,6 +10,10 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bfde89eca81bccc021d5791024c668d897b47262
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -107,5 +111,6 @@
 
           </RelativeLayout>
     </RelativeLayout>
+</RelativeLayout>
 
 

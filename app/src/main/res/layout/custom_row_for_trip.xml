@@ -3,8 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_row_shape">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/m20">
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_marginTop="@dimen/m30"
+
         android:layout_width="@dimen/w70"
         android:layout_height="@dimen/h70"
         android:layout_marginLeft="30dp"
@@ -15,29 +20,39 @@
         android:layout_height="wrap_content"
         android:text="Username"
         android:id="@+id/customer_name_to_rental"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m60"
-        android:layout_marginLeft="@dimen/m120"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"
         android:textColor="#000000"
-        />
+        android:layout_toRightOf="@+id/customer_pic_to_rental"
+       />
     <TextView
         android:id="@+id/coustomer_city_to_rental"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="lahore"
-        android:textSize="@dimen/s20"
+        android:textSize="20sp"
         android:textColor="#000000"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_marginLeft="@dimen/m120"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/customer_name_to_rental"
+        android:layout_toRightOf="@+id/customer_pic_to_rental"
+
         />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Destination :"
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/m10"
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
         android:layout_below="@+id/customer_pic_to_rental"/>
     <TextView
         android:layout_width="wrap_content"
@@ -45,113 +60,144 @@
         android:text="Medium text"
         android:id="@+id/customer_destination"
         android:layout_below="@+id/coustomer_city_to_rental"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m150"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="10dp"
         android:textColor="#000000"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pickup Location :"
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_below="@+id/customer_destination"/>
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
         android:id="@+id/customer_pickup_location_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m190"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
         android:textColor="#000000"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vehicle :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_below="@+id/customer_pickup_location_to_rental"/>
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
         android:id="@+id/customer_vehicle_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m110"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
         android:textColor="#000000"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Driver :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_below="@+id/customer_pickup_location_to_rental"/>
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
         android:id="@+id/customer_driver_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m110"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="10dp"
         android:textColor="#000000"
+
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AC :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_below="@+id/customer_pickup_location_to_rental"/>
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
         android:id="@+id/customer_AC_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m110"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="10dp"
         android:textColor="#000000"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="From :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_below="@+id/customer_pickup_location_to_rental"/>
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
         android:id="@+id/customer_start_date_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m90"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="5dp"
         android:textColor="#000000"
         />
     <TextView
@@ -160,10 +206,10 @@
         android:text="To :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m210"
+        android:layout_marginLeft="8dp"
 
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
+        android:textSize="20sp"
+
         android:layout_below="@+id/customer_pickup_location_to_rental"/>
     <TextView
         android:layout_width="match_parent"
@@ -171,20 +217,26 @@
         android:text="Medium text"
         android:id="@+id/customer_end_date_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m253"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="5dp"
         android:textColor="#000000"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pick :"
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/customer_pickup_location_to_rental"
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
+
+
          />
     <TextView
         android:layout_width="wrap_content"
@@ -192,9 +244,9 @@
         android:text="Medium text"
         android:id="@+id/customer_start_time_to_rental"
         android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/m90"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="5dp"
         android:textColor="#000000"
         />
     <TextView
@@ -203,40 +255,41 @@
         android:text="Drop :"
 
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m210"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_below="@+id/customer_pickup_location_to_rental"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+
+
        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Medium text"
         android:id="@+id/customer_end_time_to_rental"
-        android:layout_below="@+id/customer_destination"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="@dimen/_m24"
-        android:layout_marginLeft="@dimen/h265"
+
+        android:textSize="20sp"
+
+        android:layout_marginLeft="5dp"
         android:textColor="#000000"
         />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time"
         android:textColor="#e8ad7ab5"
-        android:layout_marginLeft="@dimen/m30"
-        android:textSize="@dimen/s20"
+        android:layout_marginLeft="@dimen/m20"
+        android:textSize="20sp"
         android:id="@+id/client_trips_date_time"
-        android:layout_marginTop="@dimen/m10"
-        android:layout_below="@+id/customer_pickup_location_to_rental"
+        android:layout_marginTop="8dp"
+
         />
 
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/m46"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/company_trip_bottom_tab"
         android:layout_marginTop="@dimen/m10"
 
@@ -249,9 +302,10 @@
             android:id="@+id/rental_status_button"
             android:text="Status : pending"
             android:background="#ad7ab5"
-            android:textSize="@dimen/s13"
+            android:textSize="13sp"
+            android:textAlignment="center"
             android:textAllCaps="false"
-            android:paddingRight="15dp"
+
             />
         <LinearLayout
             android:layout_weight="1"
@@ -263,12 +317,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/m15"
             android:textColor="#ffffff"
             android:id="@+id/rental_previus_bids_button"
             android:text="Bids"
             android:background="#ad7ab5"
-            android:textSize="14dp"
+            android:textSize="13sp"
             android:textAllCaps="false" android:layout_gravity="center_vertical" />
 
             <TextView
@@ -276,7 +330,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_white_cirle"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="@dimen/m8"
                 android:text="10"
                 android:id="@+id/no_of_bids"
                 android:textSize="12dp"
@@ -292,6 +346,7 @@
            android:background="#ad7ab5"
            android:layout_marginLeft="2dp"
            android:text="Bid Now"
+           android:textAllCaps="false"
            android:textColor="#ffffff"
            android:textSize="13dp"
            android:drawableRight="@drawable/ic_bid_now"
