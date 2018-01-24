@@ -23,20 +23,6 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-<<<<<<< HEAD
-                android:layout_width="@dimen/w200"
-                android:layout_height="@dimen/h80"
-                android:layout_marginTop="@dimen/h80"
-                android:background="@drawable/car_logo"
-                android:id="@+id/linearLayout"
-                android:orientation="vertical"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/m50"
-=======
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/m50"
@@ -64,8 +50,9 @@
                 android:paddingBottom="15dp"
                 android:paddingTop="15dp"
 
->>>>>>> bfde89eca81bccc021d5791024c668d897b47262
                 android:paddingLeft="@dimen/p10"
+
+
                 android:ems="10"
                 android:id="@+id/login_phone_number_text"
                 android:inputType="phone"

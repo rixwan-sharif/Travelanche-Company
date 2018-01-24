@@ -14,11 +14,7 @@
     android:gravity="center"
     android:layout_marginTop="@dimen/m80">
     <Button
-<<<<<<< HEAD
-        android:layout_width="wrap_content"
-=======
         android:layout_width="@dimen/w120"
->>>>>>> bfde89eca81bccc021d5791024c668d897b47262
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:id="@+id/sign_up_btn"
@@ -45,11 +41,7 @@
         />
 
     <Button
-<<<<<<< HEAD
-        android:layout_width="wrap_content"
-=======
         android:layout_width="@dimen/w120"
->>>>>>> bfde89eca81bccc021d5791024c668d897b47262
         android:layout_height="wrap_content"
         android:text="Log In"
         android:paddingTop="8dp"
