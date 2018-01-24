@@ -4,52 +4,73 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ad7ab5">
+
+
+
+
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="@dimen/w200"
-        android:layout_height="@dimen/h240"
-        android:layout_marginTop="@dimen/m50"
-        android:background="@drawable/car_logo"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal" />
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m50"
+                android:id="@+id/car_layout"
+
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/car_logo"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/car_layout"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m80"
+                android:paddingBottom="@dimen/p20">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/m50"
+        android:layout_height="wrap_content"
         android:background="@drawable/edit_text_shape"
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
-        android:layout_marginTop="@dimen/m80"
         android:hint="Vehicle"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
         android:textColorHint="#412e7c"
-        android:textSize="@dimen/s15"
-        android:paddingLeft="@dimen/p10"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
         android:id="@+id/lambsamb_vehicle_text"
-        android:paddingRight="@dimen/p5"
+        android:paddingRight="5dp"
         android:singleLine="true"
         android:textColor="#412e7c"
         android:gravity="left|center" />
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/m50"
+        android:layout_height="wrap_content"
         android:background="@drawable/edit_text_shape"
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
-        android:layout_marginTop="@dimen/m15"
+        android:layout_marginTop="15dp"
         android:textColorHint="#412e7c"
         android:hint="Select Driver"
-        android:textSize="@dimen/s15"
-        android:paddingLeft="@dimen/p10"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
         android:id="@+id/lambsamb_driver_text"
-        android:paddingRight="@dimen/p5"
+        android:paddingRight="5dp"
         android:singleLine="true"
         android:gravity="left|center"
         android:textColor="#412e7c" />
@@ -58,16 +79,18 @@
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/m50"
+        android:layout_height="wrap_content"
         android:background="@drawable/edit_text_shape"
-        android:layout_marginTop="@dimen/m15"
+        android:layout_marginTop="15dp"
         android:hint="Total Fare (Rs.)"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
         android:textColorHint="#412e7c"
-        android:textSize="@dimen/s15"
-        android:paddingLeft="@dimen/p10"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
         android:inputType="number"
         android:id="@+id/lambsamb_fare_text"
-        android:paddingRight="@dimen/p5"
+        android:paddingRight="5dp"
         android:singleLine="true"
         android:textColor="#412e7c"
         android:gravity="left|center" />
@@ -78,7 +101,7 @@
         android:text="Bid by Bachat"
         android:id="@+id/lambsamb_checkBox"
         android:layout_marginLeft="@dimen/m10"
-        android:layout_marginTop="@dimen/m5"
+        android:layout_marginTop="5dp"
         android:checked="false"
         android:buttonTint="#ffffff"
         android:textColor="#ffffff" />
@@ -87,31 +110,33 @@
         android:layout_marginLeft="@dimen/m10"
         android:layout_marginRight="@dimen/m10"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/m50"
+        android:layout_height="wrap_content"
         android:background="@drawable/edit_text_shape"
-
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
 
         android:layout_marginTop="@dimen/m5"
         android:textColorHint="#412e7c"
         android:hint="Total Fares (Rs.)"
         android:textSize="@dimen/s15"
-        android:paddingLeft="@dimen/p10"
+        android:paddingLeft="10dp"
         android:inputType="number"
         android:id="@+id/lambsamb_rate_txt"
         android:visibility="gone"
-        android:paddingRight="@dimen/p5"
+        android:paddingRight="5dp"
         android:singleLine="true" />
     <Button
-        android:layout_marginTop="@dimen/m15"
+        android:layout_marginTop="15dp"
         android:layout_width="@dimen/w120"
-        android:layout_height="@dimen/m50"
+        android:layout_height="wrap_content"
         android:background="@drawable/btn_shape_white"
         android:layout_gravity="center"
         android:textColor="#ad7ab5"
         android:text="Bid"
-        android:textSize="@dimen/s20"
+        android:textSize="20sp"
         android:id="@+id/lamb_samb_bid_btn" />
     </LinearLayout>
+</LinearLayout>
     </ScrollView>
 
 </LinearLayout>

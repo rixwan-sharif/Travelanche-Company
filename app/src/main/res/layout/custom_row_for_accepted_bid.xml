@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
+
     tools:context=".MainActivity"
     android:background="@drawable/main_back">
 
@@ -50,9 +50,7 @@
 
 
 
-=======
-    android:background="@android:color/transparent">
->>>>>>> 75718d499ed922c6885bdd4288dd5aa5445c9f07
+
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -150,5 +148,6 @@
 
           </RelativeLayout>
     </RelativeLayout>
+</RelativeLayout>
 
 
