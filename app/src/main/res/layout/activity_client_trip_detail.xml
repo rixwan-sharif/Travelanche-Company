@@ -31,28 +31,10 @@
         android:layout_marginLeft="307dp"
         android:textColor="#000000"
         />
-    <TextView
-        android:layout_width="178dp"
-        android:layout_height="wrap_content"
-        android:text="salman ilyas "
-        android:id="@+id/trip_details_customer_name_to_rental"
-        android:textSize="@dimen/s20"
-        android:layout_marginTop="-44dp"
-        android:layout_marginLeft="@dimen/m120"
-        android:textColor="#000000"
-        />
 
 
-    <TextView
-        android:id="@+id/trip_details_coustomer_city_to_rental"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:text="lahore"
-        android:textSize="@dimen/s20"
-        android:textColor="#000000"
-        android:layout_marginTop="@dimen/m2"
-        android:layout_marginLeft="@dimen/m120"
-        />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/trip_details_customer_destination"
+        android:id="@+id/trip_details_client_destination"
         android:layout_below="@+id/coustomer_city_to_rental"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -86,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/trip_details_customer_pickup_location_to_rental"
+        android:id="@+id/trip_details_client_pickup_location_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -107,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/trip_details_customer_vehicle_to_rental"
+        android:id="@+id/trip_details_client_vehicle_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -128,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="yes"
-        android:id="@+id/trip_details_customer_driver_to_rental"
+        android:id="@+id/trip_details_client_driver_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -144,12 +126,12 @@
         android:layout_marginLeft="180dp"
         android:textSize="@dimen/s20"
         android:layout_marginTop="-24dp"
-   />
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="yes"
-        android:id="@+id/trip_details_customer_AC_to_rental"
+        android:id="@+id/trip_details_client_AC_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -170,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/trip_details_customer_start_date_to_rental"
+        android:id="@+id/trip_details_client_start_date_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -192,7 +174,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/trip_details_customer_end_date_to_rental"
+        android:id="@+id/trip_details_client_end_date_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -213,8 +195,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/customer_start_time_to_rental"
-        android:layout_below="@+id/trip_details_customer_destination"
+        android:id="@+id/trip_details_client_pick_time_to_rental"
+        android:layout_below="@+id/trip_details_client_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
         android:layout_marginLeft="@dimen/m90"
@@ -235,7 +217,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Medium text"
-        android:id="@+id/trip_details_customer_end_time_to_rental"
+        android:id="@+id/trip_details_client_drop_time_to_rental"
         android:layout_below="@+id/customer_destination"
         android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/_m24"
@@ -257,9 +239,8 @@
             android:text="Client Details"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textStyle="bold"
             android:textSize="20sp"
-            android:background="@drawable/button_whole"
+            android:background="@drawable/btn_shape_purple"
             android:layout_marginLeft="2dp"/>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -267,7 +248,7 @@
             android:layout_marginLeft="2dp"
             android:layout_weight="1"
 
-            android:background="@drawable/button_whole">
+            android:background="@drawable/btn_shape_purple">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -278,7 +259,7 @@
                 android:layout_gravity="center_vertical"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
-                android:textStyle="bold"
+
                 android:layout_marginLeft="70dp"
                 android:layout_marginRight="10dp"
 
@@ -294,14 +275,10 @@
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/ic_white_cirle"
                 android:gravity="center_vertical|center_horizontal"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:id="@+id/no_bids_on_client_trip" />
 
         </LinearLayout>
-
-
-
-
-
 
     </LinearLayout>
 
